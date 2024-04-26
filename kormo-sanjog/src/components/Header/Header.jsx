@@ -1,5 +1,9 @@
+import HeaderTop from "./HeaderTop";
+
 export default function Header() {
   return (
-    <div>Header</div>
-  )
+    <header>
+      <HeaderTop />
+    </header>
+  );
 }
