@@ -1,7 +1,9 @@
-from django.shortcuts import render
-from .serializers import BookSerializer
+from rest_framework import viewsets
+from .models import EmployeeUserProfile
+from .serializers import EmployeeUserSerializer
 
-# Create your views here.
 
-def test(request):
-    return render(request,"User/test.html")
+
+class EmployeeUserViewSet(viewsets.ModelViewSet):
+    queryset = EmployeeUserProfile.objects.all()
+    serializer_class = EmployeeUserSerializer
