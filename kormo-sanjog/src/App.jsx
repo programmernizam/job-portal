@@ -1,5 +1,9 @@
+import Layout from "./routes/layout/Layout";
+
 export default function App() {
   return (
-    <div className="text-red-500">App</div>
-  )
+    <>
+      <Layout />
+    </>
+  );
 }
