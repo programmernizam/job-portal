@@ -1,8 +1,15 @@
 from rest_framework import serializers
-from .models import Book
+from .models import EmployeeUserProfile
+from django.contrib.auth.models import User
 
-class BookSerializer(serializers.ModelSerializer):
+class UserSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Book
-        fields = '__all__'  # Serialize all fields
-# 
+        model = User
+        fields = '__all__'
+
+class EmployeeUserSerializer(serializers.ModelSerializer):
+    user = UserSerializer()
+
+    class Meta:
+        model = EmployeeUserProfile
+        fields = '__all__'
