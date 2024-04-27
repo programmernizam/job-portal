@@ -12,7 +12,8 @@ export default {
         maxWidth: "1320px"
       },
       colors: {
-        primary: "#00a7ac"
+        primary: "#00a7ac",
+        darkMode: "#0B1120"
       }
     },
   },
