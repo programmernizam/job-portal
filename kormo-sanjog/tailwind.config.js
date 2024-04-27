@@ -4,8 +4,17 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      container: {
+        center: true,
+        maxWidth: "1320px"
+      },
+      colors: {
+        primary: "#00a7ac"
+      }
+    },
   },
   plugins: [],
 }
