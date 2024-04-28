@@ -3,14 +3,14 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { IoBriefcaseOutline } from "react-icons/io5";
 import DarkLogo from "../../assets/header1-logo.svg";
 import WhiteLogo from "../../assets/header2-logo.svg";
-import { navLinks } from "../../constant/constant";
+import { navLinks, socialIcons } from "../../constant/constant";
 import { ThemeContext } from "../../contexts";
 export default function Sidebar() {
   const { darkMode } = useContext(ThemeContext);
   return (
-    <div className="flex flex-col w-64 md:w-80 h-screen px-5 py-8 overflow-y-auto bg-white border-r dark:bg-darkMode gap-6">
+    <div className="flex flex-col w-64 md:w-80 h-screen px-5 py-8 overflow-y-auto bg-white border-r dark:border-r-darkMode dark:bg-darkMode gap-6">
       <a href="#">
-        <img src={!darkMode ? DarkLogo : WhiteLogo} alt="Logo" />
+        <img className="w-[120px]" src={!darkMode ? DarkLogo : WhiteLogo} alt="Logo" />
       </a>
       <ul className="flex flex-col justify-start gap-4">
         {navLinks.map((link, index) => (
@@ -35,6 +35,19 @@ export default function Sidebar() {
         <span className="text-white">Post Job</span>
         <IoBriefcaseOutline className="text-white" />
       </a>
+      <div className="flex items-center justify-center gap-[15px]">
+        {socialIcons.map((item, index) => (
+          <a
+            key={index}
+            href={item.link}
+            className="bg-none border border-primary bg-primary h-[30px] w-[30px] flex justify-center items-center rounded-full group hover:bg-transparent hover:border-primary transition duration-300"
+          >
+            <span className="text-[16px] text-white group-hover:text-primary font-[16px]">
+              <item.icon />
+            </span>
+          </a>
+        ))}
+      </div>
     </div>
   );
 }
