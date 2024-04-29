@@ -20,10 +20,14 @@ export default function Header() {
   return (
     <header>
       <HeaderTop />
-      <nav className="px-[7%] py-4 flex justify-between items-center dark:bg-[#020B0D]">
+      <nav className="px-[7%] py-4 flex justify-between items-center dark:bg-[#020B0D] sticky top-0">
         {/* Header Logo */}
         <a href="#">
-          <img className="w-[120px] lg:w-full" src={!darkMode ? DarkLogo : WhiteLogo} alt="Logo" />
+          <img
+            className="w-[120px] lg:w-full"
+            src={!darkMode ? DarkLogo : WhiteLogo}
+            alt="Logo"
+          />
         </a>
         {/* Header Right (for large screens) */}
         <div className="hidden lg:flex items-center gap-6">
