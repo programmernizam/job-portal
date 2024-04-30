@@ -30,3 +30,8 @@ h6 {
     display: none;
   }
 }
+@layer components {
+  .hero {
+    @apply bg-[url("./assets/hero-bg.png")] bg-no-repeat bg-cover bg-center;
+  }
+}

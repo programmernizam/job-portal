@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <header>
       <HeaderTop />
-      <nav className="px-[7%] py-4 flex justify-between items-center dark:bg-[#020B0D] sticky top-0">
+      <nav className="px-[7%] py-4 flex justify-between items-center bg-white dark:bg-[#020B0D] sticky top-0 left-0 transition duration-300 z-50">
         {/* Header Logo */}
         <a href="#">
           <img
