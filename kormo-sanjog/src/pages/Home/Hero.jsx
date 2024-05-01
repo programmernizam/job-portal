@@ -52,14 +52,16 @@ export default function Hero() {
               </button>
             </form>
             {/* Tags */}
-            <div>
-              <p>
-                <FaBookmark />
-                <span>Suggested Tag:</span>
+            <div className="flex items-center mb-[65px]">
+              <p className="flex items-center mr-[3px]">
+                <FaBookmark className="text-primary text-sm" />
+                <span className="font-semibold text-[#000] text-[16px] leading-[19px] mr-[15px]">
+                  Suggested Tag:
+                </span>
               </p>
               <p>
                 {demoData.map((tag, index) => (
-                  <span key={index}>{tag} </span>
+                  <span key={index} className="text-[14px] leading-[14px] text-[#797979] hover:text-primary cursor-pointer">{tag} </span>
                 ))}
               </p>
             </div>
