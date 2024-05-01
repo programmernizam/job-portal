@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./app.css";
 import { ThemeContext } from "./contexts/index";
 import Layout from "./routes/layout/Layout";
 
