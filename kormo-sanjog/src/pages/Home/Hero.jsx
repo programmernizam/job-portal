@@ -18,13 +18,13 @@ const demoData = [
 
 export default function Hero() {
   return (
-    <div className="hero py-[70px] pl-[8%]">
-      <div className="grid grid-cols-2 items-center">
-        <div className="px-3">
-          <h1 className="text-[70px] leading-[77px] text-[#000] font-bold mb-5">
+    <div className="hero py-[70px] pl-[3%] lg:pl-[8%]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
+        <div className="py-[50px] lg:py-0 px-3">
+          <h1 className="text-[45px] leading-[50px] text-center lg:text-left lg:text-[70px] lg:leading-[77px] text-[#000] font-bold mb-5">
             To Choose <span className="text-primary">Right Jobs.</span>
           </h1>
-          <p className="text-[20px] text-[#797979] mb-[50px]">
+          <p className="text-[18px] text-center lg:text-left lg:text-[20px] text-[#797979] mb-[50px]">
             <span className="font-medium">2400</span> Peoples are daily search
             in this portal, <span className="font-medium">100</span> user added
             job portal!
@@ -33,7 +33,7 @@ export default function Hero() {
             {/* Search Filed */}
             <form
               action=""
-              className="flex items-center justify-between p-[15px] gap-5 bg-white rounded w-[750px] mb-[30px]"
+              className="flex flex-col lg:flex-row items-center justify-between p-[15px] gap-5 bg-white rounded  lg:max-w-[750px] mb-[30px]"
             >
               <div className="flex items-center bg-[#eff3f2] w-full h-[60px] px-[25px] relative form_inner">
                 <IoBriefcaseOutline className="mr-5 text-primary text-xl" />
@@ -52,31 +52,64 @@ export default function Hero() {
               </button>
             </form>
             {/* Tags */}
-            <div className="flex items-center mb-[65px]">
+            <div className="flex flex-col gap-[10px] lg:gap-0 lg:flex-row items-center mb-[65px]">
               <p className="flex items-center mr-[3px]">
                 <FaBookmark className="text-primary text-sm" />
                 <span className="font-semibold text-[#000] text-[16px] leading-[19px] mr-[15px]">
                   Suggested Tag:
                 </span>
               </p>
-              <p>
+              <p className="text-center lg:text-left">
                 {demoData.map((tag, index) => (
-                  <span key={index} className="text-[14px] leading-[14px] text-[#797979] hover:text-primary cursor-pointer">{tag} </span>
+                  <span
+                    key={index}
+                    className="text-[14px] leading-[14px] text-[#797979] hover:text-primary cursor-pointer"
+                  >
+                    {tag}{" "}
+                  </span>
                 ))}
               </p>
             </div>
             {/* Users */}
-            <div className="flex items-center">
-              <img src={avatar1} alt="avatar" className="h-12 w-12 p-1 bg-white rounded-full shadow"/>
-              <img src={avatar2} alt="avatar" className="h-12 w-12 p-1 bg-white rounded-full -ml-4 shadow"/>
-              <img src={avatar3} alt="avatar" className="h-12 w-12 p-1 bg-white rounded-full -ml-4 shadow"/>
-              <img src={avatar4} alt="avatar" className="h-12 w-12 p-1 bg-white rounded-full -ml-4 shadow"/>
-              <img src={avatar5} alt="avatar" className="h-12 w-12 p-1 bg-white rounded-full -ml-4 shadow"/>
-              <p className="w-12 h-12 bg-white rounded-full -ml-4 flex flex-col items-center justify-center shadow">
-                <span className="text-[16px] leading-4 font-bold text-primary">21k</span>
-                <span className="text-[11px] leading-4 text-[#595959]">Users</span>
+            <div className="flex flex-col lg:flex-row items-center">
+              <div className="flex items-center mb-5 lg:mr-5">
+                <img
+                  src={avatar1}
+                  alt="avatar"
+                  className="h-12 w-12 p-1 bg-white rounded-full shadow"
+                />
+                <img
+                  src={avatar2}
+                  alt="avatar"
+                  className="h-12 w-12 p-1 bg-white rounded-full -ml-4 shadow"
+                />
+                <img
+                  src={avatar3}
+                  alt="avatar"
+                  className="h-12 w-12 p-1 bg-white rounded-full -ml-4 shadow"
+                />
+                <img
+                  src={avatar4}
+                  alt="avatar"
+                  className="h-12 w-12 p-1 bg-white rounded-full -ml-4 shadow"
+                />
+                <img
+                  src={avatar5}
+                  alt="avatar"
+                  className="h-12 w-12 p-1 bg-white rounded-full -ml-4 shadow"
+                />
+                <p className="w-12 h-12 bg-white rounded-full -ml-4 flex flex-col items-center justify-center shadow">
+                  <span className="text-[16px] leading-4 font-bold text-primary">
+                    21k
+                  </span>
+                  <span className="text-[11px] leading-4 text-[#595959]">
+                    Users
+                  </span>
+                </p>
+              </div>
+              <p className="text-[16px] font-medium">
+                To Much People Have Connected With Us!
               </p>
-              <p className="ml-5 text-[16px] font-medium">To Much People Have Connected With Us!</p>
             </div>
           </div>
         </div>
