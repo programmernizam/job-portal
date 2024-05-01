@@ -1,4 +1,5 @@
 import { FaBookmark } from "react-icons/fa";
+import { IoIosSearch } from "react-icons/io";
 import { IoBriefcaseOutline } from "react-icons/io5";
 import heroImg from "../../assets/hero-img.png";
 import avatar1 from "../../assets/user31.png";
@@ -32,17 +33,23 @@ export default function Hero() {
             {/* Search Filed */}
             <form
               action=""
-              className="flex items-center justify-between p-[15px] gap-5 bg-white"
+              className="flex items-center justify-between p-[15px] gap-5 bg-white rounded w-[750px] mb-[30px]"
             >
               <div className="flex items-center bg-[#eff3f2] w-full h-[60px] px-[25px] relative form_inner">
-                <IoBriefcaseOutline className="mr-5 text-primary text-xl"/>
+                <IoBriefcaseOutline className="mr-5 text-primary text-xl" />
                 <input
                   type="text"
                   placeholder="What jobs are you looking for?"
                   className="w-full text-[#000] py-5 bg-transparent text-[15px] leading-4 outline-none"
                 />
               </div>
-              <button type="submit">Search</button>
+              <button
+                type="submit"
+                className="flex items-center py-[15px] px-[30px] font-exo font-medium bg-primary text-[17px] leading-[26px] rounded text-white"
+              >
+                <IoIosSearch />
+                Search
+              </button>
             </form>
             {/* Tags */}
             <div>
