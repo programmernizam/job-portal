@@ -52,29 +52,31 @@ export default function Hero() {
               </button>
             </form>
             {/* Tags */}
-            <div>
-              <p>
-                <FaBookmark />
-                <span>Suggested Tag:</span>
+            <div className="flex items-center mb-[65px]">
+              <p className="flex items-center mr-[3px]">
+                <FaBookmark className="text-primary text-sm" />
+                <span className="font-semibold text-[#000] text-[16px] leading-[19px] mr-[15px]">
+                  Suggested Tag:
+                </span>
               </p>
               <p>
                 {demoData.map((tag, index) => (
-                  <span key={index}>{tag} </span>
+                  <span key={index} className="text-[14px] leading-[14px] text-[#797979] hover:text-primary cursor-pointer">{tag} </span>
                 ))}
               </p>
             </div>
             {/* Users */}
-            <div>
-              <img src={avatar1} alt="avatar" />
-              <img src={avatar2} alt="avatar" />
-              <img src={avatar3} alt="avatar" />
-              <img src={avatar4} alt="avatar" />
-              <img src={avatar5} alt="avatar" />
-              <p>
-                <span>21k</span>
-                <span>Users</span>
+            <div className="flex items-center">
+              <img src={avatar1} alt="avatar" className="h-12 w-12 p-1 bg-white rounded-full shadow"/>
+              <img src={avatar2} alt="avatar" className="h-12 w-12 p-1 bg-white rounded-full -ml-4 shadow"/>
+              <img src={avatar3} alt="avatar" className="h-12 w-12 p-1 bg-white rounded-full -ml-4 shadow"/>
+              <img src={avatar4} alt="avatar" className="h-12 w-12 p-1 bg-white rounded-full -ml-4 shadow"/>
+              <img src={avatar5} alt="avatar" className="h-12 w-12 p-1 bg-white rounded-full -ml-4 shadow"/>
+              <p className="w-12 h-12 bg-white rounded-full -ml-4 flex flex-col items-center justify-center shadow">
+                <span className="text-[16px] leading-4 font-bold text-primary">21k</span>
+                <span className="text-[11px] leading-4 text-[#595959]">Users</span>
               </p>
-              <p>To Much People Have Connected With Us!</p>
+              <p className="ml-5 text-[16px] font-medium">To Much People Have Connected With Us!</p>
             </div>
           </div>
         </div>
