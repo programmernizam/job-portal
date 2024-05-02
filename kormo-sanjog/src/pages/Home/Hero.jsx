@@ -22,9 +22,10 @@ export default function Hero() {
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
         <div className="py-[50px] lg:py-0 px-3">
           <h1 className="text-[45px] leading-[50px] text-center lg:text-left lg:text-[70px] lg:leading-[77px] text-[#000] font-bold mb-5">
-            To Choose <span className="text-primary">Right Jobs.</span>
+            To Choose{" "}
+            <span className="text-primary dark:text-white">Right Jobs.</span>
           </h1>
-          <p className="text-[18px] text-center lg:text-left lg:text-[20px] text-[#797979] mb-[50px]">
+          <p className="text-[18px] text-center lg:text-left lg:text-[20px] text-[#797979] dark:text-[#f5f5f5] mb-[50px]">
             <span className="font-medium">2400</span> Peoples are daily search
             in this portal, <span className="font-medium">100</span> user added
             job portal!
@@ -55,7 +56,7 @@ export default function Hero() {
             <div className="flex flex-col gap-[10px] lg:gap-0 lg:flex-row items-center mb-[65px]">
               <p className="flex items-center mr-[3px]">
                 <FaBookmark className="text-primary text-sm" />
-                <span className="font-semibold text-[#000] text-[16px] leading-[19px] mr-[15px]">
+                <span className="font-semibold text-[#000] dark:text-white text-[16px] leading-[19px] mr-[15px]">
                   Suggested Tag:
                 </span>
               </p>
@@ -63,7 +64,7 @@ export default function Hero() {
                 {demoData.map((tag, index) => (
                   <span
                     key={index}
-                    className="text-[14px] leading-[14px] text-[#797979] hover:text-primary cursor-pointer"
+                    className="text-[14px] leading-[14px] text-[#797979] dark:text-[#e9e6e6] hover:text-primary cursor-pointer"
                   >
                     {tag}{" "}
                   </span>
@@ -72,7 +73,7 @@ export default function Hero() {
             </div>
             {/* Users */}
             <div className="flex flex-col lg:flex-row items-center">
-              <div className="flex items-center mb-5 lg:mr-5">
+              <div className="flex items-center mb-5 lg:mb-0 lg:mr-5">
                 <img
                   src={avatar1}
                   alt="avatar"

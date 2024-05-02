@@ -1,3 +1,10 @@
+.font-exo {
+  font-family: "Exo 2", sans-serif;
+}
+.font-work {
+  font-family: "Work Sans", sans-serif;
+}
+/* Home Page Hero Form */
 .form_inner::before {
   content: "";
   width: 1px;
@@ -9,9 +16,15 @@
   transform: translateY(-50%);
   line-height: 1;
 }
-.font-exo {
-  font-family: "Exo 2", sans-serif;
-}
-.font-work {
-  font-family: "Work Sans", sans-serif;
+/* Home Page Partners Title */
+.partner_title::after {
+  content: "";
+  width: 114px;
+  height: 1px;
+  background-color: rgba(0, 167, 172, 0.5);
+  border-radius: 5px;
+  position: absolute;
+  top: 55%;
+  right: -130px;
+  transform: translateY(-50%);
 }
