@@ -31,7 +31,7 @@ export default function Partner() {
         </h2>
       </div>
       <Swiper
-        slidesPerView={1}
+        slidesPerView={2}
         spaceBetween={30}
         breakpoints={{
           640: {

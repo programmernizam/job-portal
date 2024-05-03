@@ -1,3 +1,4 @@
+import CategoryList from "./CategoryList";
 import Hero from "./Hero";
 import Partner from "./Partner";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <main>
       <Hero />
       <Partner />
+      <CategoryList />
     </main>
   );
 }
