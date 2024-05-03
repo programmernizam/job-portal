@@ -22,7 +22,7 @@ export default function Header() {
       <HeaderTop />
       <nav className="px-[7%] py-4 flex justify-between items-center bg-white dark:bg-[#020B0D] sticky top-0 left-0 transition duration-300 z-50">
         {/* Header Logo */}
-        <a href="#">
+        <a href="/">
           <img
             className="w-[120px] lg:w-full"
             src={!darkMode ? DarkLogo : WhiteLogo}
