@@ -31,6 +31,7 @@ export default function Partner() {
         </h2>
       </div>
       <Swiper
+        effect={"fade"}
         slidesPerView={2}
         spaceBetween={30}
         breakpoints={{
@@ -53,6 +54,7 @@ export default function Partner() {
           delay: 2000,
           disableOnInteraction: false,
         }}
+        speed={1500}
         modules={[Autoplay]}
         className="mySwiper scroll-smooth"
       >
