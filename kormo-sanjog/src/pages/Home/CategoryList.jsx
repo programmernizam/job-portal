@@ -11,6 +11,7 @@ export default function CategoryList() {
           To choose your trending job dream & to make future bright.
         </p>
       </div>
+      
     </div>
   );
 }
