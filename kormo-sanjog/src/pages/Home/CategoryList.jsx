@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
 import { Autoplay } from "swiper/modules";
 import { categoryList } from "../../constant/constant";
+import CategoryCard from "./CategoryCard";
 
 export default function CategoryList() {
   const categories = [...categoryList, ...categoryList];
@@ -49,7 +50,7 @@ export default function CategoryList() {
         >
           {categories.map((category, index) => (
             <SwiperSlide key={index}>
-              <img src={category.img} alt={category.title} />
+              <CategoryCard category={category} />
             </SwiperSlide>
           ))}
         </Swiper>
