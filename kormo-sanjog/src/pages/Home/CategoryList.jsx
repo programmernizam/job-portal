@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
 import { Autoplay } from "swiper/modules";
 import { categoryList } from "../../constant/constant";
+import CategoryCard from "./CategoryCard";
 
 export default function CategoryList() {
   const categories = [...categoryList, ...categoryList];
@@ -18,11 +19,11 @@ export default function CategoryList() {
           To choose your trending job dream & to make future bright.
         </p>
       </div>
-      <div>
+      <div className="mt-10">
         <Swiper
           effect={"fade"}
           slidesPerView={1}
-          spaceBetween={30}
+          spaceBetween={20}
           breakpoints={{
             640: {
               slidesPerView: 1,
@@ -30,11 +31,11 @@ export default function CategoryList() {
             },
             768: {
               slidesPerView: 3,
-              spaceBetween: 40,
+              spaceBetween: 20,
             },
             1024: {
               slidesPerView: 4,
-              spaceBetween: 50,
+              spaceBetween: 20,
             },
           }}
           loop={true}
@@ -49,7 +50,7 @@ export default function CategoryList() {
         >
           {categories.map((category, index) => (
             <SwiperSlide key={index}>
-              <img src={category.img} alt={category.title} />
+              <CategoryCard category={category} />
             </SwiperSlide>
           ))}
         </Swiper>
