@@ -25,6 +25,8 @@ export default function FeaturedJobs() {
             </a>
           </div>
         </div>
+        {/* Featured Jobs Loop */}
+        <div></div>
       </div>
     </section>
   );
