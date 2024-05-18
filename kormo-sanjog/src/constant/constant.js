@@ -7,6 +7,10 @@ import medicalIcon from '../assets/category/medical.svg';
 import medical from '../assets/category/medical_&_nurse.png';
 import transportIcon from '../assets/category/transport.svg';
 import transport from '../assets/category/transportation.png';
+import company1 from '../assets/jobs/company-01.png';
+import company2 from '../assets/jobs/company-02.png';
+import company4 from '../assets/jobs/company-04.png';
+import company3 from '../assets/jobs/company-05.png';
 
 const navLinks = [
     {
@@ -85,8 +89,59 @@ const categoryList = [
     },
 ]
 
+const jobsList = [
+    {
+        id: 2001,
+        title: "Senior Receptionist",
+        company: "Medico.co Ltd",
+        logo: company1,
+        salary: "$20K-$50K",
+        deadline: "05 April, 2023",
+        type: ["Full Time", "Part Time", "Remote"],
+        perMonth: true,
+        perHour: true,
+        perYear: false,
+    },
+    {
+        id: 2002,
+        title: "Senior PHP Developer",
+        company: "Marko Land Conpany",
+        logo: company2,
+        salary: "$50K-$70K",
+        deadline: "05 April, 2023",
+        type: ["Full Time", "Part Time"],
+        perMonth: true,
+        perHour: true,
+        perYear: false,
+    },
+    {
+        id: 2003,
+        title: "Junior React Developer",
+        company: "UI.UX Company",
+        logo: company3,
+        salary: "$30K-$50K",
+        deadline: "06 April, 2023",
+        type: ["Full Time", "Remote"],
+        perMonth: true,
+        perHour: true,
+        perYear: false,
+    },
+    {
+        id: 2004,
+        title: "Senior React Developer",
+        company: "UI.UX Company",
+        logo: company4,
+        salary: "$20-$50",
+        deadline: "05 April, 2023",
+        type: ["Part Time", "Remote"],
+        perMonth: false,
+        perHour: true,
+        perYear: false,
+    },
+]
+
 export {
-    categoryList, navLinks,
+    categoryList, jobsList, navLinks,
     socialIcons
 };
 
