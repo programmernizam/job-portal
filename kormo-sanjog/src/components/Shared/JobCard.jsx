@@ -10,6 +10,8 @@ export default function JobCard({ job }) {
     perMonth,
     perHour,
     perYear,
+    experience,
+    location,
   } = job;
   return (
     <div className="border py-[30px] px-[25px] rounded">
