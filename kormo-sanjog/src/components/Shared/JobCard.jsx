@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 import { FaBookmark } from "react-icons/fa";
+import { IoBriefcaseOutline } from "react-icons/io5";
+import CommonButton from "./CommonButton";
 
 export default function JobCard({ job }) {
   const {
@@ -17,7 +19,8 @@ export default function JobCard({ job }) {
   } = job;
   return (
     <div className="border py-[40px] px-[75px] rounded-xl">
-      <div className="flex justify-between gap-5">
+      {/* Card Top */}
+      <div className="flex justify-between gap-5 mb-[30px]">
         <div className="flex flex-row gap-20 relative">
           <div className="flex gap-3">
             <img
@@ -56,6 +59,25 @@ export default function JobCard({ job }) {
           <div className="p-2 bg-primary/10 rounded-full group hover:bg-primary transition duration-500 cursor-pointer">
             <FaBookmark className="text-primary group-hover:text-white" />
           </div>
+        </div>
+      </div>
+      {/* Card Bottom */}
+      <div className="flex justify-between items-center gap-20">
+        <div>
+          <div className="flex items-center gap-1">
+            <IoBriefcaseOutline />
+            <p>
+              Job Applied: <span>07 Person</span>
+            </p>
+          </div>
+        </div>
+        <div className="flex justify-center">
+          {type.map((item, index) => (
+            <p key={index}>{item}</p>
+          ))}
+        </div>
+        <div>
+          <CommonButton />
         </div>
       </div>
     </div>
