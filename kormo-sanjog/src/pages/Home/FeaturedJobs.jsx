@@ -1,4 +1,6 @@
 import { BsArrowRight } from "react-icons/bs";
+import JobCard from "../../components/Shared/JobCard";
+import { jobsList } from "../../constant/constant";
 
 export default function FeaturedJobs() {
   return (
@@ -26,7 +28,11 @@ export default function FeaturedJobs() {
           </div>
         </div>
         {/* Featured Jobs Loop */}
-        <div></div>
+        <div>
+          {jobsList.map((job) => (
+            <JobCard key={job.id} job={job} />
+          ))}
+        </div>
       </div>
     </section>
   );
