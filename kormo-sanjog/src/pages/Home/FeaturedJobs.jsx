@@ -28,7 +28,7 @@ export default function FeaturedJobs() {
           </div>
         </div>
         {/* Featured Jobs Loop */}
-        <div>
+        <div className="grid grid-cols-1 gap-8 mt-10">
           {jobsList.map((job) => (
             <JobCard key={job.id} job={job} />
           ))}

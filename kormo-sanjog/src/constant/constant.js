@@ -99,7 +99,7 @@ const jobsList = [
         deadline: "05 April, 2023",
         type: ["Full Time", "Part Time", "Remote"],
         perMonth: true,
-        perHour: true,
+        perHour: false,
         perYear: false,
     },
     {
@@ -111,7 +111,7 @@ const jobsList = [
         deadline: "05 April, 2023",
         type: ["Full Time", "Part Time"],
         perMonth: true,
-        perHour: true,
+        perHour: false,
         perYear: false,
     },
     {
@@ -123,7 +123,7 @@ const jobsList = [
         deadline: "06 April, 2023",
         type: ["Full Time", "Remote"],
         perMonth: true,
-        perHour: true,
+        perHour: false,
         perYear: false,
     },
     {
