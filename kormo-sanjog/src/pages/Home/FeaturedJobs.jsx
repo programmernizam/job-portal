@@ -1,4 +1,4 @@
-import { BsArrowRight } from "react-icons/bs";
+import CommonButton from "../../components/Shared/CommonButton";
 import JobCard from "../../components/Shared/JobCard";
 import { jobsList } from "../../constant/constant";
 
@@ -16,19 +16,11 @@ export default function FeaturedJobs() {
             </p>
           </div>
           <div>
-            <a
-              href="#"
-              className="flex items-center justify-end gap-[3px] text-[17px] leading-[17px] font-medium transition duration-300 hover:text-primary font-exo"
-            >
-              Explore More
-              <span className="ml-5">
-                <BsArrowRight />
-              </span>
-            </a>
+            <CommonButton />
           </div>
         </div>
         {/* Featured Jobs Loop */}
-        <div>
+        <div className="grid grid-cols-1 gap-8 mt-10">
           {jobsList.map((job) => (
             <JobCard key={job.id} job={job} />
           ))}
