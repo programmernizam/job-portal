@@ -29,7 +29,7 @@ export default function JobCard({ job }) {
               className="rounded-full w-[52px] h-[52px]"
             />
             <div className="job_details">
-              <h3>{title}</h3>
+              <h3 className="font-bold">{title}</h3>
               <p>{company}</p>
             </div>
           </div>
