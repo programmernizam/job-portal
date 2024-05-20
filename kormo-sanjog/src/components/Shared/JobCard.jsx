@@ -22,15 +22,19 @@ export default function JobCard({ job }) {
       {/* Card Top */}
       <div className="flex justify-between gap-5 mb-[30px]">
         <div className="flex flex-row gap-20 relative">
-          <div className="flex gap-3">
+          <div className="flex gap-3 relative">
             <img
               src={logo}
               alt="title"
               className="rounded-full w-[52px] h-[52px]"
             />
             <div className="job_details">
-              <h3 className="font-bold">{title}</h3>
-              <p>{company}</p>
+              <h3 className="font-semibold text-[20px] leading-[24px] text-black hover:text-primary cursor-pointer">
+                {title}
+              </h3>
+              <p className="text-[15px] leading-[26px] text-black hover:text-primary cursor-pointer">
+                {company}
+              </p>
             </div>
           </div>
           <div className="flex gap-10">
