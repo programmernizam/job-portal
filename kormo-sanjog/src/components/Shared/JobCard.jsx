@@ -37,24 +37,60 @@ export default function JobCard({ job }) {
               </p>
             </div>
           </div>
-          <div className="flex gap-10">
+          {/* Job Details */}
+          <div className="flex gap-10 job_detail">
             <ul>
               <li>
-                Location: <span>{location}</span>
+                <span className="font-normal text-[#595959] font-exo text-[16px]">
+                  Location:
+                </span>{" "}
+                <span className="text-[16px] font-medium text-black">
+                  {location}
+                </span>
               </li>
               <li>
-                Salary: <span>{salary}</span>
-                {perMonth && <span> / PerMonth</span>}
-                {perHour && <span> / PerHour</span>}
-                {perYear && <span> / PerYear</span>}
+                <span className="font-normal text-[#595959] font-exo text-[16px]">
+                  Salary:
+                </span>{" "}
+                <span className="text-[16px] font-medium text-black">
+                  {salary}
+                </span>
+                {perMonth && (
+                  <span className="text-[15px] text-[#595959] font-medium">
+                    {" "}
+                    / PerMonth
+                  </span>
+                )}
+                {perHour && (
+                  <span className="text-[15px] text-[#595959] font-medium">
+                    {" "}
+                    / PerHour
+                  </span>
+                )}
+                {perYear && (
+                  <span className="text-[15px] text-[#595959] font-medium">
+                    {" "}
+                    / PerYear
+                  </span>
+                )}
               </li>
             </ul>
             <ul>
               <li>
-                Salary: <span>{experience}</span>
+                <span className="font-normal text-[#595959] font-exo text-[16px]">
+                  Experience:
+                </span>{" "}
+                <span className="text-[16px] font-medium text-black">
+                  {experience}
+                </span>
               </li>
               <li>
-                Deadline: <span>{deadline}</span>
+                <span className="font-normal text-[#595959] font-exo text-[16px]">
+                  Deadline:
+                </span>
+                <span className="text-[16px] font-medium text-black">
+                  {deadline}
+                </span>
               </li>
             </ul>
           </div>
