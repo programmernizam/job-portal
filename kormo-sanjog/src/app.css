@@ -28,3 +28,25 @@
   right: -130px;
   transform: translateY(-50%);
 }
+.job_details::after {
+  content: "";
+  width: 1px;
+  height: 44px;
+  background: rgba(0, 167, 172, 0.3);
+  position: absolute;
+  top: 0;
+  right: -40px;
+}
+.job_detail ul li {
+  position: relative;
+}
+.job_detail ul li::before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: rgba(0, 167, 172);
+  position: absolute;
+  left: -16px;
+  top: 8px;
+}

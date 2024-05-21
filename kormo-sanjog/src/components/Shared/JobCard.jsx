@@ -22,35 +22,75 @@ export default function JobCard({ job }) {
       {/* Card Top */}
       <div className="flex justify-between gap-5 mb-[30px]">
         <div className="flex flex-row gap-20 relative">
-          <div className="flex gap-3">
+          <div className="flex gap-3 relative">
             <img
               src={logo}
               alt="title"
               className="rounded-full w-[52px] h-[52px]"
             />
             <div className="job_details">
-              <h3 className="font-bold">{title}</h3>
-              <p>{company}</p>
+              <h3 className="font-semibold text-[20px] leading-[24px] text-black hover:text-primary cursor-pointer">
+                {title}
+              </h3>
+              <p className="text-[15px] leading-[26px] text-black hover:text-primary cursor-pointer">
+                {company}
+              </p>
             </div>
           </div>
-          <div className="flex gap-10">
+          {/* Job Details */}
+          <div className="flex gap-10 job_detail">
             <ul>
               <li>
-                Location: <span>{location}</span>
+                <span className="font-normal text-[#595959] font-exo text-[16px]">
+                  Location:
+                </span>{" "}
+                <span className="text-[16px] font-medium text-black">
+                  {location}
+                </span>
               </li>
               <li>
-                Salary: <span>{salary}</span>
-                {perMonth && <span> / PerMonth</span>}
-                {perHour && <span> / PerHour</span>}
-                {perYear && <span> / PerYear</span>}
+                <span className="font-normal text-[#595959] font-exo text-[16px]">
+                  Salary:
+                </span>{" "}
+                <span className="text-[16px] font-medium text-black">
+                  {salary}
+                </span>
+                {perMonth && (
+                  <span className="text-[15px] text-[#595959] font-medium">
+                    {" "}
+                    / PerMonth
+                  </span>
+                )}
+                {perHour && (
+                  <span className="text-[15px] text-[#595959] font-medium">
+                    {" "}
+                    / PerHour
+                  </span>
+                )}
+                {perYear && (
+                  <span className="text-[15px] text-[#595959] font-medium">
+                    {" "}
+                    / PerYear
+                  </span>
+                )}
               </li>
             </ul>
             <ul>
               <li>
-                Salary: <span>{experience}</span>
+                <span className="font-normal text-[#595959] font-exo text-[16px]">
+                  Experience:
+                </span>{" "}
+                <span className="text-[16px] font-medium text-black">
+                  {experience}
+                </span>
               </li>
               <li>
-                Deadline: <span>{deadline}</span>
+                <span className="font-normal text-[#595959] font-exo text-[16px]">
+                  Deadline:
+                </span>
+                <span className="text-[16px] font-medium text-black">
+                  {deadline}
+                </span>
               </li>
             </ul>
           </div>
