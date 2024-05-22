@@ -106,7 +106,7 @@ export default function JobCard({ job }) {
         <div>
           <div className="flex items-center gap-1">
             <IoBriefcaseOutline />
-            <p>
+            <p className="">
               Job Applied: <span>07 Person</span>
             </p>
           </div>
